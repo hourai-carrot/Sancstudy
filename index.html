@@ -9,44 +9,160 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#learning-sites">学習サイト一覧へ移動</a>
+
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Sancstudy ホーム"><img src="assets/logo.svg" alt="Sancstudy" /></a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">メニューを開く</span></button>
-      <nav id="main-nav" class="main-nav" aria-label="メインナビゲーション"><a href="#learning-sites">学習サイト</a><a href="#how-to">使い方</a></nav>
+      <a class="brand" href="#top" aria-label="Sancstudy ホーム">
+        <span class="brand-mark">S</span>
+        <span>Sancstudy</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">メニューを開く</span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="メインナビゲーション">
+        <a href="#learning-sites">学習サイト</a>
+        <a href="#how-to">使い方</a>
+      </nav>
     </div>
   </header>
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-pattern" aria-hidden="true"></div>
+
       <div class="container hero-content">
         <p class="eyebrow">STUDY PORTAL</p>
         <h1 id="hero-title">学びを、もっと楽しく。<br />もっと身近に。</h1>
-        <p class="hero-copy">Sancstudyは、毎日の「知りたい」と「できた」をつなぐ学習サイトの入り口です。気になる学びを、ここからはじめよう。</p>
-        <a class="button button-primary" href="#learning-sites">学びたいことを選ぼう <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h11M11 5l5 5-5 5" /></svg></a>
+        <p class="hero-copy">
+          Sancstudyは、毎日の「知りたい」と「できた」をつなぐ学習サイトの入り口です。
+          気になる学びを、ここからはじめよう。
+        </p>
+
+        <a class="button button-primary" href="#learning-sites">
+          学びたいことを選ぼう
+          <span aria-hidden="true">→</span>
+        </a>
       </div>
     </section>
 
     <section id="learning-sites" class="section sites-section" aria-labelledby="sites-title">
       <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">LEARNING SITES</p><h2 id="sites-title">学習サイトを選ぶ</h2></div><p>自分のペースに合う学びを見つけよう。</p></div>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LEARNING SITES</p>
+            <h2 id="sites-title">学習サイトを選ぶ</h2>
+          </div>
+          <p>自分のペースに合う学びを見つけよう。</p>
+        </div>
+
         <div class="site-grid">
-          <article class="site-card"><div class="card-top"><span class="card-icon icon-game" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7h10M7 12h5m-5 5h10M17 5v14M5 5h14v14H5z"/></svg></span><span class="badge">外部サイト</span></div><h3>学習サイトを開く</h3><p>リンク先の学習コンテンツを確認して、あなたに合う学びを見つけましょう。</p><a href="https://hourai-carrot.github.io/LEAP-OVER-QUEST/" target="_blank" rel="noopener noreferrer">サイトへ進む <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 13 13 7m-5 0h5v5"/></svg><span class="sr-only">（新しいタブで開く）</span></a></article>
-          <article class="site-card"><div class="card-top"><span class="card-icon icon-language" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h4m-4 4h8m2-3h.01"/></svg></span><span class="badge">外部サイト</span></div><h3>学習サイトを開く</h3><p>リンク先で提供されている学習コンテンツを、実際に開いて確認できます。</p><a href="https://hourai-carrot.github.io/KANJI-WAR/" target="_blank" rel="noopener noreferrer">サイトへ進む <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 13 13 7m-5 0h5v5"/></svg><span class="sr-only">（新しいタブで開く）</span></a></article>
-          <article class="site-card"><div class="card-top"><span class="card-icon icon-plan" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3v4m10-4v4M5 9h14M6 5h12a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm3 8h6m-6 3h4"/></svg></span><span class="badge">外部サイト</span></div><h3>学習サイトを開く</h3><p>リンク先のサービス内容を確認して、日々の学びに活用してみましょう。</p><a href="https://homework-manager-azure.vercel.app/" target="_blank" rel="noopener noreferrer">サイトへ進む <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 13 13 7m-5 0h5v5"/></svg><span class="sr-only">（新しいタブで開く）</span></a></article>
-          <article class="site-card"><div class="card-top"><span class="card-icon icon-math" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 5h14v14H5zM9 9h6m-3-3v6m-3 4h6"/></svg></span><span class="badge">外部サイト</span></div><h3>学習サイトを開く</h3><p>リンク先の学習コンテンツを開き、取り組みたいテーマを見つけてください。</p><a href="https://beeeeach.github.io/Prime-Striker/" target="_blank" rel="noopener noreferrer">サイトへ進む <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 13 13 7m-5 0h5v5"/></svg><span class="sr-only">（新しいタブで開く）</span></a></article>
+          <article class="site-card">
+            <div class="card-top">
+              <span class="card-icon">01</span>
+              <span class="badge">外部サイト</span>
+            </div>
+            <h3>学習サイトを開く</h3>
+            <p>リンク先の学習コンテンツを確認して、あなたに合う学びを見つけましょう。</p>
+            <a href="https://hourai-carrot.github.io/LEAP-OVER-QUEST/" target="_blank" rel="noopener noreferrer">
+              サイトへ進む <span aria-hidden="true">↗</span>
+              <span class="sr-only">（新しいタブで開く）</span>
+            </a>
+          </article>
+
+          <article class="site-card">
+            <div class="card-top">
+              <span class="card-icon">02</span>
+              <span class="badge">外部サイト</span>
+            </div>
+            <h3>学習サイトを開く</h3>
+            <p>リンク先で提供されている学習コンテンツを、実際に開いて確認できます。</p>
+            <a href="https://hourai-carrot.github.io/KANJI-WAR/" target="_blank" rel="noopener noreferrer">
+              サイトへ進む <span aria-hidden="true">↗</span>
+              <span class="sr-only">（新しいタブで開く）</span>
+            </a>
+          </article>
+
+          <article class="site-card">
+            <div class="card-top">
+              <span class="card-icon">03</span>
+              <span class="badge">外部サイト</span>
+            </div>
+            <h3>学習サイトを開く</h3>
+            <p>リンク先のサービス内容を確認して、日々の学びに活用してみましょう。</p>
+            <a href="https://homework-manager-azure.vercel.app/" target="_blank" rel="noopener noreferrer">
+              サイトへ進む <span aria-hidden="true">↗</span>
+              <span class="sr-only">（新しいタブで開く）</span>
+            </a>
+          </article>
+
+          <article class="site-card">
+            <div class="card-top">
+              <span class="card-icon">04</span>
+              <span class="badge">外部サイト</span>
+            </div>
+            <h3>学習サイトを開く</h3>
+            <p>リンク先の学習コンテンツを開き、取り組みたいテーマを見つけてください。</p>
+            <a href="https://beeeeach.github.io/Prime-Striker/" target="_blank" rel="noopener noreferrer">
+              サイトへ進む <span aria-hidden="true">↗</span>
+              <span class="sr-only">（新しいタブで開く）</span>
+            </a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="how-to" class="section how-section" aria-labelledby="how-title"><div class="container"><div class="section-heading centered"><p class="eyebrow">HOW TO USE</p><h2 id="how-title">Sancstudyの使い方</h2><p>今日の気分に合う学びから、気軽にスタート。</p></div><ol class="steps"><li><span class="step-number">01</span><span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h7a3 3 0 0 1 3 3v11a3 3 0 0 0-3-3H4zM20 5h-7a3 3 0 0 0-3 3v11a3 3 0 0 1 3-3h7z"/></svg></span><h3>好きなサイトを選ぶ</h3><p>気になるカードから、学びたいサイトへ進みます。</p></li><li><span class="step-number">02</span><span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18m-7-9h14M5.5 5.5l13 13M18.5 5.5l-13 13"/></svg></span><h3>遊びながら学ぶ</h3><p>自分のペースで試して、わかる楽しさを広げます。</p></li><li><span class="step-number">03</span><span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20a8 8 0 1 0-8-8m0 0 3-3m-3 3 3 3M12 8v4l3 2"/></svg></span><h3>毎日の学びを続ける</h3><p>小さな一歩を重ねて、自分らしい学習習慣に。</p></li></ol></div></section>
+    <section id="how-to" class="section how-section" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">HOW TO USE</p>
+          <h2 id="how-title">Sancstudyの使い方</h2>
+          <p>今日の気分に合う学びから、気軽にスタート。</p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <span class="step-number">01</span>
+            <h3>好きなサイトを選ぶ</h3>
+            <p>気になるカードから、学びたいサイトへ進みます。</p>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <h3>遊びながら学ぶ</h3>
+            <p>自分のペースで試して、わかる楽しさを広げます。</p>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <h3>毎日の学びを続ける</h3>
+            <p>小さな一歩を重ねて、自分らしい学習習慣に。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container footer-content"><div><img src="assets/logo.svg" alt="Sancstudy" /><p>学びの入り口を、もっと自由に。</p></div><p class="external-note">掲載リンクはすべて外部サイトを新しいタブで開きます。</p><small>© 2026 Sancstudy</small></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark">S</span>
+          <span>Sancstudy</span>
+        </a>
+        <p>学びの入り口を、もっと自由に。</p>
+      </div>
+
+      <p class="external-note">掲載リンクはすべて外部サイトを新しいタブで開きます。</p>
+      <small>© 2026 Sancstudy</small>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
