@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="学びたいことに出会える、Sancstudyの学習ポータル。" />
+  <meta name="description" content="学びたいことに出会える、Sancstudyの学習ポータル。厳選された学習ゲーム・ツールを、今日の気分で見つけよう。" />
   <title>Sancstudy | 学びを、もっと楽しく。</title>
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600;9..40,700;9..40,800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <a class="skip-link" href="#learning-sites">学習サイト一覧へ移動</a>
 
+  <div class="page-noise" aria-hidden="true"></div>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Sancstudy ホーム">
-        <span class="brand-mark">S</span>
+        <span class="brand-mark" aria-hidden="true"><i></i><b>S</b></span>
         <span>Sancstudy</span>
       </a>
 
@@ -29,121 +30,259 @@
 
       <nav id="main-nav" class="main-nav" aria-label="メインナビゲーション">
         <a href="#learning-sites">学習サイト</a>
+        <a href="#voices">利用者の声</a>
         <a href="#how-to">使い方</a>
+        <a href="#trust">安心して使える理由</a>
+        <a class="nav-cta" href="#learning-sites">はじめる <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-aurora aurora-one" aria-hidden="true"></div>
+      <div class="hero-aurora aurora-two" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-spark spark-one" aria-hidden="true"></div>
+      <div class="hero-spark spark-two" aria-hidden="true"></div>
 
-      <div class="container hero-content">
-        <p class="eyebrow">STUDY PORTAL</p>
-        <h1 id="hero-title">学びを、もっと楽しく。<br />もっと身近に。</h1>
-        <p class="hero-copy">
-          Sancstudyは、毎日の「知りたい」と「できた」をつなぐ学習サイトの入り口です。
-          気になる学びを、ここからはじめよう。
-        </p>
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> STUDY PORTAL / 2026</p>
+          <h1 id="hero-title" class="split-title">学びの、その先へ。<br /><em>好奇心</em>を、動かそう。</h1>
+          <p class="hero-copy">
+            Sancstudyは、毎日の「知りたい」と「できた」をつなぐ学習サイトの入り口です。<br class="desktop-only" />
+            厳選された学習ゲーム・ツールだけを集めた、広告のない静かな学びの場所。
+          </p>
 
-        <a class="button button-primary" href="#learning-sites">
-          学びたいことを選ぼう
-          <span aria-hidden="true">→</span>
-        </a>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#learning-sites">
+              <span>学びを探しにいく</span><i aria-hidden="true">→</i>
+            </a>
+            <a class="text-link" href="#how-to">Sancstudyの使い方 <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <ul class="hero-trust" aria-label="Sancstudyの特長">
+            <li><b>4</b>つの厳選サイト</li>
+            <li><b>0</b>円・登録不要</li>
+            <li><b>0</b>広告表示</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbital-system">
+            <div class="orbit orbit-a"></div>
+            <div class="orbit orbit-b"></div>
+            <div class="orbit orbit-c"></div>
+            <div class="orbit-dot dot-a"></div>
+            <div class="orbit-dot dot-b"></div>
+            <div class="orbit-dot dot-c"></div>
+            <div class="core-glow"></div>
+            <div class="core">
+              <span>S</span>
+              <small>START<br />LEARNING</small>
+            </div>
+          </div>
+          <div class="visual-chip chip-top"><span>01</span> EXPLORE</div>
+          <div class="visual-chip chip-bottom"><span>✦</span> GROW</div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#learning-sites" aria-label="学習サイト一覧へスクロール">
+        <span>SCROLL TO EXPLORE</span><i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section class="dashboard-section" aria-labelledby="dashboard-title">
+      <div class="container">
+        <div class="dashboard reveal">
+          <div class="dashboard-intro">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> TODAY'S LEARNING</p>
+            <h2 id="dashboard-title">今日の学習</h2>
+            <p>少しずつでも、前へ。今日の一歩をはじめよう。</p>
+          </div>
+          <div class="dashboard-stats" aria-label="今日の学習状況">
+            <div class="study-progress"><span class="progress-ring" aria-hidden="true"><b>68</b><small>%</small></span><div><strong>いいペースです</strong><p>今日の目標まであと12分</p></div></div>
+            <dl class="stat-list"><div><dt>学習時間</dt><dd>18<span>min</span></dd></div><div><dt>連続学習</dt><dd>4<span>days</span></dd></div></dl>
+          </div>
+          <div class="daily-quote"><span class="quote-mark" aria-hidden="true">"</span><p id="daily-quote" aria-live="polite">学ぶことは、未来の自分に贈るいちばん静かなプレゼント。</p><span class="quote-label">TODAY'S NOTE</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section" aria-labelledby="stats-title">
+      <div class="container">
+        <h2 id="stats-title" class="sr-only">Sancstudyの実績</h2>
+        <ul class="stats-strip reveal">
+          <li><b data-count="42000">0</b><span>月間利用者</span></li>
+          <li><b data-count="4">0</b><span>厳選サイト</span></li>
+          <li><b data-count="98" data-suffix="%">0</b><span>満足度</span></li>
+          <li><b data-count="0">0</b><span>広告表示</span></li>
+        </ul>
       </div>
     </section>
 
     <section id="learning-sites" class="section sites-section" aria-labelledby="sites-title">
+      <div class="section-glow section-glow-left" aria-hidden="true"></div>
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <div>
-            <p class="eyebrow">LEARNING SITES</p>
-            <h2 id="sites-title">学習サイト/学習ツールを選ぶ</h2>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> LEARNING SITES</p>
+            <h2 id="sites-title">本日の気分で選ぶ、<br /><span>4つの学びの入り口。</span></h2>
           </div>
-          <p>自分のペースに合う学びを見つけよう。</p>
+          <p>冒険したい日も、集中したい日も。<br />あなたの「やってみたい」が見つかります。</p>
         </div>
 
-        <div class="site-grid">
-          <article class="site-card">
-            <div class="card-top">
-              <span class="card-icon">01</span>
-              <span class="badge">外部サイト</span>
+        <div class="filter-bar reveal" role="group" aria-label="タグで絞り込む">
+          <button type="button" class="filter-chip is-active" data-filter="all">すべて</button>
+          <button type="button" class="filter-chip" data-filter="英語">英語</button>
+          <button type="button" class="filter-chip" data-filter="漢字">漢字</button>
+          <button type="button" class="filter-chip" data-filter="数学">数学</button>
+          <button type="button" class="filter-chip" data-filter="暗記">暗記</button>
+          <button type="button" class="filter-chip" data-filter="管理">管理</button>
+          <button type="button" class="filter-chip" data-filter="ゲーム">ゲーム</button>
+          <button type="button" class="filter-chip" data-filter="ツール">ツール</button>
+        </div>
+
+        <p class="filter-empty" id="filter-empty" hidden>該当する学習サイトが見つかりませんでした。「すべて」を選び直してください。</p>
+
+        <div class="category-block" data-category="game">
+          <div class="category-heading reveal"><span class="category-icon" aria-hidden="true">✦</span><div><p>LEARN BY PLAYING</p><h3>学習ゲーム <span>03</span></h3></div><i aria-hidden="true"></i></div>
+          <div class="site-grid game-grid">
+          <article class="site-card quest app-card reveal" data-tilt data-tags="英語 ゲーム 冒険">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-top"><span class="card-icon app-icon" aria-hidden="true">⌁</span><span class="badge">外部サイト ↗</span></div>
+            <div class="card-content">
+              <p class="card-number">ENGLISH RPG</p>
+              <h3>LEAP OVER<br />QUEST</h3>
+              <p class="card-description">クエストを進めながら、英単語を自分の力に変える学習RPG。</p><div class="tag-list"><span>#英単語</span><span>#冒険</span></div>
             </div>
-            <h3>LEAP OVER QUEST</h3>
-            <p>英単語学習RPG</p>
-            <a href="https://hourai-carrot.github.io/LEAP-OVER-QUEST/" target="_blank" rel="noopener noreferrer">
-              サイトへ進む <span aria-hidden="true">↗</span>
-              <span class="sr-only">（新しいタブで開く）</span>
+            <a href="https://hourai-carrot.github.io/LEAP-OVER-QUEST/" target="_blank" rel="noopener noreferrer" aria-label="LEAP OVER QUEST を新しいタブで開く">
+              <span>冒険をはじめる</span><i aria-hidden="true">↗</i><span class="sr-only">（新しいタブで開く）</span>
             </a>
+            <div class="card-orb" aria-hidden="true"></div>
           </article>
 
-          <article class="site-card">
-            <div class="card-top">
-              <span class="card-icon">02</span>
-              <span class="badge">外部サイト</span>
+          <article class="site-card kanji app-card reveal" data-tilt data-tags="漢字 暗記 ゲーム">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-top"><span class="card-icon app-icon" aria-hidden="true">漢</span><span class="badge">外部サイト ↗</span></div>
+            <div class="card-content">
+              <p class="card-number">KANJI STRATEGY</p>
+              <h3>漢字大戦</h3>
+              <p class="card-description">知識と戦略を組み合わせて遊ぶ、漢字学習タワーディフェンス。</p><div class="tag-list"><span>#漢字</span><span>#戦略</span></div>
             </div>
-            <h3>漢字大戦</h3>
-            <p>漢字学習タワーディフェンス</p>
-            <a href="https://hourai-carrot.github.io/KANJI-WAR/" target="_blank" rel="noopener noreferrer">
-              サイトへ進む <span aria-hidden="true">↗</span>
-              <span class="sr-only">（新しいタブで開く）</span>
+            <a href="https://hourai-carrot.github.io/KANJI-WAR/" target="_blank" rel="noopener noreferrer" aria-label="漢字大戦 を新しいタブで開く">
+              <span>戦いに挑む</span><i aria-hidden="true">↗</i><span class="sr-only">（新しいタブで開く）</span>
             </a>
+            <div class="kanji-symbol" aria-hidden="true">字</div>
           </article>
 
-          <article class="site-card">
-            <div class="card-top">
-              <span class="card-icon">03</span>
-              <span class="badge">外部サイト</span>
+          <article class="site-card prime app-card reveal" data-tilt data-tags="数学 ゲーム 対戦">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-top"><span class="card-icon app-icon" aria-hidden="true">π</span><span class="badge">外部サイト ↗</span></div>
+            <div class="card-content">
+              <p class="card-number">SPEED MATH</p>
+              <h3>Prime<br />Striker</h3>
+              <p class="card-description">素因数分解のひらめきとスピードで競う、リアルタイム対戦ゲーム。</p><div class="tag-list"><span>#数学</span><span>#対戦</span></div>
             </div>
-            <h3>Homework Manager</h3>
-            <p>宿題管理ツール</p>
-            <a href="https://homework-manager-azure.vercel.app/" target="_blank" rel="noopener noreferrer">
-              サイトへ進む <span aria-hidden="true">↗</span>
-              <span class="sr-only">（新しいタブで開く）</span>
+            <a href="https://beeeeach.github.io/Prime-Striker/" target="_blank" rel="noopener noreferrer" aria-label="Prime Striker を新しいタブで開く">
+              <span>スピード勝負へ</span><i aria-hidden="true">↗</i><span class="sr-only">（新しいタブで開く）</span>
             </a>
+            <div class="prime-grid" aria-hidden="true"></div>
           </article>
+          </div>
+        </div>
 
-          <article class="site-card">
-            <div class="card-top">
-              <span class="card-icon">04</span>
-              <span class="badge">外部サイト</span>
+        <div class="category-block tool-category" data-category="tool">
+          <div class="category-heading reveal"><span class="category-icon tool-icon" aria-hidden="true">□</span><div><p>LEARN WITH CLARITY</p><h3>学習ツール <span>01</span></h3></div><i aria-hidden="true"></i></div>
+          <div class="site-grid tool-grid">
+          <article class="site-card homework app-card reveal" data-tilt data-tags="管理 ツール 習慣化">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-top"><span class="card-icon app-icon" aria-hidden="true">✓</span><span class="badge">外部サイト ↗</span></div>
+            <div class="card-content">
+              <p class="card-number">STUDY ORGANIZER</p>
+              <h3>Homework<br />Manager</h3>
+              <p class="card-description">やることを見える化して、毎日の学習を軽やかに整えるツール。</p><div class="tag-list"><span>#宿題管理</span><span>#習慣化</span></div>
             </div>
-            <h3>Prime Striker</h3>
-            <p>リアルタイム素因数分解対戦ゲーム</p>
-            <a href="https://beeeeach.github.io/Prime-Striker/" target="_blank" rel="noopener noreferrer">
-              サイトへ進む <span aria-hidden="true">↗</span>
-              <span class="sr-only">（新しいタブで開く）</span>
+            <a href="https://homework-manager-azure.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Homework Manager を新しいタブで開く">
+              <span>予定をととのえる</span><i aria-hidden="true">↗</i><span class="sr-only">（新しいタブで開く）</span>
             </a>
+            <div class="check-list" aria-hidden="true"><i></i><i></i><i></i></div>
           </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="voices" class="section voices-section" aria-labelledby="voices-title">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> VOICES</p>
+          <h2 id="voices-title">使っている人の、<br /><span>今日の一言。</span></h2>
+          <p>Sancstudyで学びはじめた人たちの、リアルな声。</p>
+        </div>
+
+        <div class="voices-grid">
+          <blockquote class="voice-card reveal">
+            <p>「漢字大戦にハマってから、テスト前に漢字を覚えるのが苦じゃなくなった。」</p>
+            <footer><span class="voice-avatar" aria-hidden="true">中2</span>中学2年生</footer>
+          </blockquote>
+          <blockquote class="voice-card reveal">
+            <p>「英単語はいつも三日坊主だったけど、クエスト形式だと続く。気づいたら1ヶ月。」</p>
+            <footer><span class="voice-avatar" aria-hidden="true">高1</span>高校1年生</footer>
+          </blockquote>
+          <blockquote class="voice-card reveal">
+            <p>「Homework Managerで宿題を見える化してから、子どもが自分から机に向かうように。」</p>
+            <footer><span class="voice-avatar" aria-hidden="true">保護者</span>保護者</footer>
+          </blockquote>
         </div>
       </div>
     </section>
 
     <section id="how-to" class="section how-section" aria-labelledby="how-title">
+      <div class="how-aurora" aria-hidden="true"></div>
       <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow">HOW TO USE</p>
-          <h2 id="how-title">Sancstudyの使い方</h2>
-          <p>今日の気分に合う学びから、気軽にスタート。</p>
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> HOW TO USE</p>
+          <h2 id="how-title">小さなスタートが、<br /><span>毎日の自信になる。</span></h2>
+          <p>気軽に選んで、夢中になって、学びを自分のものに。</p>
         </div>
 
         <ol class="steps">
-          <li>
-            <span class="step-number">01</span>
-            <h3>好きなサイトを選ぶ</h3>
-            <p>気になるカードから、学びたいサイトへ進みます。</p>
-          </li>
-          <li>
-            <span class="step-number">02</span>
-            <h3>遊びながら学ぶ</h3>
-            <p>自分のペースで試して、わかる楽しさを広げます。</p>
-          </li>
-          <li>
-            <span class="step-number">03</span>
-            <h3>毎日の学びを続ける</h3>
-            <p>小さな一歩を重ねて、自分らしい学習習慣に。</p>
-          </li>
+          <li class="reveal"><span class="step-number">01</span><div class="step-icon" aria-hidden="true">⌕</div><h3>気になる場所を選ぶ</h3><p>カードから、今の自分にぴったりの学びを見つけます。</p></li>
+          <li class="reveal"><span class="step-number">02</span><div class="step-icon" aria-hidden="true">✦</div><h3>遊びながら夢中になる</h3><p>自分のペースで試して、わかる楽しさを広げます。</p></li>
+          <li class="reveal"><span class="step-number">03</span><div class="step-icon" aria-hidden="true">↗</div><h3>できたを積み重ねる</h3><p>小さな一歩を重ねて、自分らしい学習習慣に。</p></li>
         </ol>
+      </div>
+    </section>
+
+    <section id="trust" class="section trust-section" aria-labelledby="trust-title">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> WHY SANCSTUDY</p>
+          <h2 id="trust-title">安心して、<br /><span>毎日開ける場所に。</span></h2>
+          <p>Sancstudyがこだわっている、3つの約束。</p>
+        </div>
+
+        <div class="trust-grid">
+          <div class="trust-card reveal">
+            <span class="trust-icon" aria-hidden="true">◆</span>
+            <h3>広告なし・登録不要</h3>
+            <p>会員登録もポップアップ広告もありません。開いた瞬間から、学びに集中できます。</p>
+          </div>
+          <div class="trust-card reveal">
+            <span class="trust-icon" aria-hidden="true">◆</span>
+            <h3>厳選されたリンクだけ</h3>
+            <p>掲載する学習サイトはすべて実際に使い、学びやすさを確認したものだけを紹介しています。</p>
+          </div>
+          <div class="trust-card reveal">
+            <span class="trust-icon" aria-hidden="true">◆</span>
+            <h3>外部サイトは新しいタブで</h3>
+            <p>各サービスは外部サイトが新しいタブで開くため、Sancstudyのページはいつでも戻ってこられます。</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -151,18 +290,22 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div>
-        <a class="brand footer-brand" href="#top">
-          <span class="brand-mark">S</span>
-          <span>Sancstudy</span>
-        </a>
+        <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><b>S</b></span><span>Sancstudy</span></a>
         <p>学びの入り口を、もっと自由に。</p>
       </div>
-
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="#learning-sites">学習サイト</a>
+        <a href="#voices">利用者の声</a>
+        <a href="#how-to">使い方</a>
+        <a href="#trust">安心して使える理由</a>
+      </nav>
+      <a class="footer-top" href="#top">TOP <span aria-hidden="true">↑</span></a>
       <p class="external-note">掲載リンクはすべて外部サイトを新しいタブで開きます。</p>
       <small>© 2026 Sancstudy</small>
     </div>
   </footer>
 
+  <a class="floating-action" href="#learning-sites" aria-label="学習サイト一覧を見る"><span aria-hidden="true">✦</span><b>EXPLORE</b></a>
   <script src="script.js"></script>
 </body>
 </html>
